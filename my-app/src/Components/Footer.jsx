@@ -56,7 +56,7 @@ function Footer() {
             <div className="col-md-3 text-white">
               <div className="hovertext">
                <Link to="/AboutUs" className="text-decoration-none text-white custom"><h5 className="mt-3">About Us</h5></Link> 
-               <Link to="/Services" className="text-decoration-none text-white custom"><h5 className="mt-3">Services</h5></Link> 
+               <Link to="/acupuncture" className="text-decoration-none text-white custom"><h5 className="mt-3">Services</h5></Link> 
                <Link to="/ContactUs"className="text-decoration-none text-white custom"><h5 className="mt-3">Contact Us</h5></Link>
               <Link to="/Testimonials"className="text-decoration-none text-white custom"><h5 className="mt-3">Testimonials</h5></Link>
               </div>

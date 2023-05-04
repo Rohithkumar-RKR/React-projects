@@ -279,3 +279,38 @@
   width: 50%;
   margin: auto;
 }
+
+.hover{
+  position: relative;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.25s;
+  background: rgba(255, 192, 28, 0.2)
+  
+  /* another way to center using postion 
+  top:45px
+  left:75px */
+}
+.overlay:hover{
+  opacity: 1;
+}
+#btnc{
+  background-color: #f2a008;
+}
+.parap{
+  font-size: 25px;
+  font-weight: 500;
+  font-style: normal;
+  color: #190f04e6;
+}

@@ -26,15 +26,15 @@ function Home() {
       <div className="container-fluid p-0 py-3 py-md-3">
         <div
           id="carouselExampleIndicators"
-          class="carousel slide"
+          className="carousel slide"
           data-bs-ride="true"
         >
-          <div class="carousel-indicators">
+          <div className="carousel-indicators">
             <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="0"
-              class="active"
+              className="active"
               aria-current="true"
               aria-label="Slide 1"
             ></button>
@@ -63,40 +63,40 @@ function Home() {
               aria-label="Slide 5"
             ></button>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src={slide0} class="  img-fluid" alt="..." />
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <Link to="/acupuncture"><img src={slide0} className="  img-fluid" alt="..." /></Link>
             </div>
-            <div class="carousel-item">
-              <img src={slide1} class="  img-fluid" alt="..." />
+            <div className="carousel-item">
+             <Link to="/yoga"><img src={slide1} className="  img-fluid" alt="..." /></Link> 
             </div>
-            <div class="carousel-item">
-              <img src={slide2} class="  img-fluid" alt="..." />
+            <div className="carousel-item">
+             <Link to="/cosematic"><img src={slide2} className="  img-fluid" alt="..." /></Link> 
             </div>
-            <div class="carousel-item">
-              <img src={slide3} class=" img-fluid" alt="..." />
+            <div className="carousel-item">
+              <Link to="/moxibustion"><img src={slide3} className=" img-fluid" alt="..." /></Link>
             </div>
-            <div class="carousel-item">
-              <img src={slide4} class="  img-fluid" alt="..." />
+            <div className="carousel-item">
+              <Link to="/cupping"><img src={slide4} className="  img-fluid" alt="..." /></Link>
             </div>
           </div>
           <button
-            class="carousel-control-prev"
+            className="carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
           </button>
           <button
-            class="carousel-control-next"
+            className="carousel-control-next"
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next"
           >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
           </button>
         </div>
       </div>
@@ -130,9 +130,8 @@ function Home() {
               a significant transformation on all related aspects of body, mind
               and energy systems.
             </p>
-            <Link to="/home1">
-              {" "}
-              <button className="btnsect2">Know more</button>{" "}
+            <Link to="/aboutus">
+              <button className="btnsect2">Know more</button>
             </Link>
           </div>
         </div>
@@ -147,19 +146,19 @@ function Home() {
               </h3>
             </div>
             <div className="col-md-6 d-flex align-items-center text-center">
-              <div class="row gy-3">
-                <div class="col-md-4 col-12 ">
+              <div className="row gy-3">
+                <div className="col-md-4 col-12 ">
                   <input id="sect3inpt"
                     type="text"
-                    class="form-control"
+                    className="form-control"
                     placeholder="First name"
                     aria-label="First name"
                   />
                 </div>
-                <div class="col-md-4 col-12">
+                <div className="col-md-4 col-12">
                   <input id="sect3inpt"
                     type="email"
-                    class="form-control"
+                    className="form-control"
                     placeholder="E-mail"
                     aria-label="E-mail"
                   />
@@ -183,30 +182,94 @@ function Home() {
       <section className="sect5 container py-2 py-md-2">
         <div className="row gy-3 py-3">
           <div className="col-md-3 ">
-             <img src={galery1} className="img-fluid" alt="" />
+            <div className="hover">
+              <div>
+               <img src={galery1} className="img-fluid" alt="" />
+              </div>
+              <div className="overlay">
+                <p className="mb-0 parap  ">Acupuncture</p>
+                <Link to="/acupuncture"><button className="btn  text-white btn-sm " id="btnc">Know more</button></Link>
+              </div>
+             </div>
           </div>
           <div className="col-md-3 ">
-             <img src={gallery2}  className="img-fluid" alt="" />
+          <div className="hover">
+              <div>
+               <img src={gallery2} className="img-fluid" alt="" />
+              </div>
+              <div className="overlay">
+                <p className="mb-0 parap  ">Cosematic Acpuncture</p>
+                <Link to="/cosematic"><button className="btn  text-white btn-sm " id="btnc">Know more</button></Link>
+              </div>
+             </div>
           </div>
           <div className="col-md-3 ">
-             <img src={gallery3}  className="img-fluid" alt="" />
+          <div className="hover">
+              <div>
+               <img src={gallery3} className="img-fluid" alt="" />
+              </div>
+              <div className="overlay">
+                <p className="mb-0 parap  ">Cupping</p>
+                <Link to="/cupping"><button className="btn  text-white btn-sm " id="btnc">Know more</button></Link>
+              </div>
+             </div>
           </div>
           <div className="col-md-3 ">
-             <img src={gallery4}  className="img-fluid " alt="" />
+          <div className="hover">
+              <div>
+               <img src={gallery4} className="img-fluid" alt="" />
+              </div>
+              <div className="overlay">
+                <p className="mb-0 parap  ">Functional Nutrition</p>
+               <Link to="/functional"><button className="btn  text-white btn-sm " id="btnc">Know more</button></Link> 
+              </div>
+             </div>
           </div>
           </div>
           <div className="row gy-3">
           <div className="col-md-3 ">
-             <img src={gallery5}  className="img-fluid" alt="" />
+          <div className="hover">
+              <div>
+               <img src={gallery5} className="img-fluid" alt="" />
+              </div>
+              <div className="overlay">
+                <p className="mb-0 parap  ">Guasha</p>
+               <Link to="/guasha"><button className="btn  text-white btn-sm " id="btnc">Know more</button></Link> 
+              </div>
+             </div>
           </div>
           <div className="col-md-3 ">
-             <img src={gallery6} className="img-fluid" alt="" />
+          <div className="hover">
+              <div>
+               <img src={gallery6} className="img-fluid" alt="" />
+              </div>
+              <div className="overlay">
+                <p className="mb-0 parap  ">Moxibustion</p>
+                <Link to="/moxibustion"><button className="btn  text-white btn-sm " id="btnc">Know more</button></Link>
+              </div>
+             </div>
           </div>
           <div className="col-md-3 ">
-             <img src={gallery7} className="img-fluid"alt="" />
+          <div className="hover">
+              <div>
+               <img src={gallery7} className="img-fluid" alt="" />
+              </div>
+              <div className="overlay">
+                <p className="mb-0 parap  ">Pranayama</p>
+                <Link to="/pranayama"><button className="btn  text-white btn-sm " id="btnc">Know more</button></Link>
+              </div>
+             </div>
           </div>
           <div className="col-md-3 ">
-             <img src={gallery8} className="img-fluid" alt="" />
+          <div className="hover">
+              <div>
+               <img src={gallery8} className="img-fluid" alt="" />
+              </div>
+              <div className="overlay">
+                <p className="mb-0 parap  ">Yoga</p>
+                <Link to="/yoga"><button className="btn  text-white btn-sm " id="btnc">Know more</button></Link>
+              </div>
+             </div>
           </div>
           </div>
       </section>
@@ -261,7 +324,7 @@ function Home() {
             <p className="sect9par text-white ms-2 mb-0">Your journey towards transforming health starts here. connect with TAPAS team of experts to get a highly customized “Integrative Health Plan”</p>
           </div>
           <div className="col-md-4 d-flex align-items-center justify-content-center">
-            <button className="sect9btn">Schedule an appointment</button>
+            <Link to="/contactus"><button className="sect9btn">Schedule an appointment</button></Link>
           </div>
         </div>
       </section>
@@ -296,19 +359,19 @@ function Home() {
               </h3>
             </div>
             <div className="col-md-6 d-flex align-items-center text-center">
-              <div class="row gy-3">
-                <div class="col-md-4 col-12 ">
+              <div className="row gy-3">
+                <div className="col-md-4 col-12 ">
                   <input id="sect3inpt"
                     type="text"
-                    class="form-control"
+                    className="form-control"
                     placeholder="First name"
                     aria-label="First name"
                   />
                 </div>
-                <div class="col-md-4 col-12">
+                <div className="col-md-4 col-12">
                   <input id="sect3inpt"
                     type="email"
-                    class="form-control"
+                    className="form-control"
                     placeholder="E-mail"
                     aria-label="E-mail"
                   />
@@ -374,7 +437,7 @@ function Home() {
             <p className="sect9par text-white ms-2 mb-0">Life is too short to feel stressed, in pain or fatigued, regain your vibrant health.</p>
           </div>
           <div className="col-md-4 d-flex align-items-center justify-content-center">
-            <button className="sect9btn">Schedule an appointment</button>
+           <Link to="/contactus"><button className="sect9btn">Schedule an appointment</button></Link> 
           </div>
         </div>
       </section>
@@ -383,14 +446,14 @@ function Home() {
        <div className="row gy-3 text-center mt-3">
         <div className="col-md-6">
         <div className="px-3">
-              <div class="ratio ratio-16x9 ">
+              <div className="ratio ratio-16x9 ">
                 <iframe src="https://www.youtube.com/embed/unG8iv4NHgw" title="YouTube video" allowfullscreen=""></iframe>
               </div>
             </div>
         </div>
-        <div class="col-md-6">
+        <div className="col-md-6">
             <div className="px-3">
-            <div class="ratio ratio-16x9">
+            <div className="ratio ratio-16x9">
               <iframe src="https://www.youtube.com/embed/TC5bcqBge1k" title="YouTube video" allowfullscreen=""></iframe>
             </div>
             </div>

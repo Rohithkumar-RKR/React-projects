@@ -17,7 +17,7 @@ function Header() {
           <Link className="nav-link" aria-current="page" to='/aboutus'>About Us</Link>
         </li>
         <li className="nav-item dropdown mx-4">
-          <Link className="nav-link dropdown-toggle" to='/services' role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <Link className="nav-link dropdown-toggle" to='/acupuncture' role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Services
           </Link>
           <ul className="dropdown-menu">
